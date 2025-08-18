@@ -37,8 +37,13 @@
       <ul class="space-y-4">
         <li><a href="#hero" class="nav-link flex items-center px-4 py-2 rounded hover:bg-gray-700"><i class="bx bx-home"></i><span class="ml-2">Home</span></a></li>
         <li><a href="#about" class="nav-link flex items-center px-4 py-2 rounded hover:bg-gray-700"><i class="bx bx-user"></i><span class="ml-2">About</span></a></li>
-        <li><a href="#resume" class="nav-link flex items-center px-4 py-2 rounded hover:bg-gray-700"><i class="bx bx-file-blank"></i><span class="ml-2">Resume</span></a></li>
-        <li><a href="#projects" class="nav-link flex items-center px-4 py-2 rounded hover:bg-gray-700"><i class="bx bx-book-content"></i><span class="ml-2">Projects</span></a></li>
+        
+        <!-- Resume external -->
+        <li><a href="https://elikiprop.vercel.app/" target="_blank" class="nav-link flex items-center px-4 py-2 rounded hover:bg-gray-700"><i class="bx bx-file-blank"></i><span class="ml-2">Resume</span></a></li>
+        
+        <!-- Projects external -->
+        <li><a href="https://elikiprop.vercel.app/projects.html" target="_blank" class="nav-link flex items-center px-4 py-2 rounded hover:bg-gray-700"><i class="bx bx-book-content"></i><span class="ml-2">Projects</span></a></li>
+        
         <li><a href="#contact" class="nav-link flex items-center px-4 py-2 rounded hover:bg-gray-700"><i class="bx bx-envelope"></i><span class="ml-2">Contact</span></a></li>
       </ul>
     </nav>
@@ -91,40 +96,6 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-gray-100 dark:bg-gray-900">
-      <div class="container px-4">
-        <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
-        <ul id="projects-filters" class="flex justify-center space-x-4 mb-8">
-          <li data-filter="*" class="filter-active cursor-pointer px-4 py-2 bg-blue-500 text-white rounded">All</li>
-          <li data-filter=".filter-app" class="cursor-pointer px-4 py-2 bg-gray-300 dark:bg-gray-700 rounded">Apps</li>
-          <li data-filter=".filter-web" class="cursor-pointer px-4 py-2 bg-gray-300 dark:bg-gray-700 rounded">Web</li>
-        </ul>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 portfolio-container">
-          <!-- Project 1 -->
-          <div class="portfolio-item filter-app" data-gsap="fade-up">
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-              <img src="assets/img/project1.jpg" alt="Project 1" class="w-full h-48 object-cover" loading="lazy" />
-              <div class="p-4">
-                <h3 class="text-xl font-semibold">Mobile App</h3>
-                <p class="text-gray-600 dark:text-gray-300">A user-friendly task management app built with React Native.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Project 2 -->
-          <div class="portfolio-item filter-web" data-gsap="fade-up">
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-              <img src="assets/img/project2.jpg" alt="Project 2" class="w-full h-48 object-cover" loading="lazy" />
-              <div class="p-4">
-                <h3 class="text-xl font-semibold">E-Commerce Website</h3>
-                <p class="text-gray-600 dark:text-gray-300">A responsive online store built with HTML, CSS, and JavaScript.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="py-16 bg-white dark:bg-gray-800">
       <div class="container px-4">
@@ -156,11 +127,16 @@
     <div class="container text-center px-4">
       <h3 class="text-2xl font-bold">Eli Kiprop</h3>
       <p class="my-4">Connect with me on social media!</p>
-      <div class="social-links flex justify-center space-x-4">
+      <div class="social-links flex justify-center space-x-4 mb-4">
         <a href="https://twitter.com/EliKiprop9" class="hover:text-blue-300" target="_blank" aria-label="Twitter"><i class="bx bxl-twitter text-2xl"></i></a>
         <a href="https://web.facebook.com/eli.ndiema.1" class="hover:text-blue-300" target="_blank" aria-label="Facebook"><i class="bx bxl-facebook text-2xl"></i></a>
         <a href="https://www.instagram.com/eli.3948" class="hover:text-blue-300" target="_blank" aria-label="Instagram"><i class="bx bxl-instagram text-2xl"></i></a>
         <a href="https://www.linkedin.com/in/eli-kiprop-b12a51240/" class="hover:text-blue-300" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin text-2xl"></i></a>
+      </div>
+      <!-- Footer Links -->
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="https://elikiprop.vercel.app/" target="_blank" class="hover:text-blue-300">Resume</a>
+        <a href="https://elikiprop.vercel.app/projects.html" target="_blank" class="hover:text-blue-300">Projects</a>
       </div>
       <div class="mt-4">
         © 2025 <strong>Eli Kiprop</strong>. All Rights Reserved
@@ -169,7 +145,7 @@
   </footer>
 
   <!-- Back to Top -->
-  <a href="#" class="fixed bottom-4 right-4 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600 shadow-lg" aria-label="Back to top">
+  <a href="#" class="fixed bottom-4 right-4 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600 shadow-lg opacity-0 transition-opacity duration-300" aria-label="Back to top">
     <i class="bi bi-arrow-up-short text-xl"></i>
   </a>
 
